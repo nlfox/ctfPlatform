@@ -1,27 +1,42 @@
-# Laravel PHP Framework
+# Yet Another CTF Platform
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+![demo](https://s8.postimg.org/hb12at3eb/demo.png)
+很惭愧 只是一个微小的CTF平台 
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+## Installation
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+### Via Docker (Recommanded)
 
-## Official Documentation
+#### From my docker image
+(Assume you have already installed docker)
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+1. `docker pull nlfox/ctf`
+2. `touch database.sqlite`
+3. `docker run -p 80:80 -v ~/database.sqlite:/var/www/html/app/database/database.sqlite nlfox/ctf "php artisan migrate"`
+4. `docker run -p 80:80 -v ~/database.sqlite:/var/www/html/app/database/database.sqlite nlfox/ctf`
 
-## Contributing
+#### Laraedit [Project Home](https://github.com/laraedit/laraedit-docker)
+(Assume you have already installed docker)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+1. `git clone https://github.com/nlfox/ctfPlatform.git`
+2. `cd ctfPlatform`
+3. `mv .example.env .env` use sample .env config file
+4. `touch database/database.sqlite` create database file 
+(if you want to use MySQL instead, modify the .env file)
+5. `docker pull laraedit/laraedit` pull
+6. `docker run -p 80:80 -v ctfPlatform:/var/www/html/app \
+laraedit/laraedit "cd /var/www/html/app && php artisan migrate"`
+     do database migrate and new admin password will be displayed.
+     
+
+
+
 
 ## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability, please send an e-mail to Taylor Otwell at nlfox@msn.cn. All security vulnerabilities will be promptly addressed.
+
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+The CTF Platform is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
