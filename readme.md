@@ -3,7 +3,7 @@
 ![demo](https://s8.postimg.org/hb12at3eb/demo.png)
 很惭愧 只是一个微小的CTF平台
 
-Live Demo: [link](http://138.68.1.13/)
+Live Demo: [link](http://138.68.1.13:8001/)
 
 ## Installation
 
