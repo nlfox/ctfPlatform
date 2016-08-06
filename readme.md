@@ -37,7 +37,7 @@ laraedit/laraedit "cd /var/www/html/app && php artisan migrate"`
 
 ## Security Vulnerabilities
 
-If you discover a security vulnerability, please send an e-mail to Taylor Otwell at nlfox@msn.cn. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability, please send an e-mail nlfox@msn.cn. All security vulnerabilities will be promptly addressed.
 
 
 ## License
