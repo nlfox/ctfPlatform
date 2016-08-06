@@ -1,0 +1,45 @@
+{
+  "name": "titatoggle",
+  "version": "1.2.8",
+  "homepage": "https://github.com/kleinejan/titatoggle",
+  "authors": [
+    "Jan Enning <enning@kleinejan.org>"
+  ],
+  "description": "Default bootstrap checkbox toggle buttons. Just default Bootstrap, add a class to use these awesome toggle buttons. Browser support: Internet Explorer 9, FireFox, Safari, Chrome, Safari Ios, Stock Android browser 4.2, Chrome Android",
+  "main": [
+    "dist/_titatoggle.less",
+    "dist/titatoggle-dist.css",
+    "dist/titatoggle-dist-min.css"
+  ],
+  "moduleType": [
+    "yui"
+  ],
+  "ignore": [
+    "/.*",
+    "_config.yml",
+    "_includes",
+    "_layouts",
+    "node_modules",
+    "bower_components",
+    "css",
+    "docs",
+    "less",
+    "Gruntfile.js",
+    "index.html",
+    "package.json"
+  ],
+  "keywords": [
+    "css",
+    "less",
+    "bootstrap",
+    "togglebutton",
+    "checkbox",
+    "form",
+    "buttons",
+    "toggle"
+  ],
+  "license": "GNU GENERAL PUBLIC LICENSE V2.0",
+  "dependencies": {
+    "bootstrap": "~3.2.0"
+  }
+}
