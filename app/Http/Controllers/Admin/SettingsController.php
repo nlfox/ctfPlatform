@@ -32,6 +32,7 @@ class SettingsController extends Controller
     {
         $intro = Settings::getIntro();
         $intro->value = Input::get("intro");
+        $intro->save();
         if ($request->exists('started')) {
             $started = 1;
         } else {
